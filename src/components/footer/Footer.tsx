@@ -59,7 +59,7 @@ const Footer = ({
     >
       <div className="flex flex-col px-6 mx-auto items-left lg:w-screen-lg lg:px-11">
         <nav className="flex items-center justify-between py-4">
-          <div className="flex flex-row items-center justify-center gap-1.5">
+          {/* <div className="flex flex-row items-center justify-center gap-1.5">
             <Link href="/">
               <Logo logo={logo} />
             </Link>
@@ -77,15 +77,15 @@ const Footer = ({
                 </p>
               </>
             )}
-          </div>
+          </div> */}
           <ThemeSwitch />
         </nav>
         <section className="pt-2 pb-5 overflow-hidden text-neutral-400 dark:text-neutral-500">
-          <div className="flex items-end justify-between w-full pb-2 my-2 text-xs border-b border-footer gap-x-2 dark:border-neutral-700">
+          <div className="flex items-end justify-between w-full pb-2 my-2 text-xs  border-footer gap-x-2 dark:border-neutral-700">
             <div className="flex flex-col gap-2 shrink-0">
               <div className="flex items-center">
-                Powered by
-                <div className="inline-flex px-2 py-1 mx-2 space-x-2 rounded-full place-items-center bg-neutral-200 dark:bg-neutral-700">
+                Powered by 
+                {/* <div className="inline-flex px-2 py-1 mx-2 space-x-2 rounded-full place-items-center bg-neutral-200 dark:bg-neutral-700">
                   {tools.map((tool) => (
                     <Link
                       key={tool.url}
@@ -97,9 +97,9 @@ const Footer = ({
                       <tool.icon size={12} />
                     </Link>
                   ))}
-                </div>
+                </div> */}
               </div>
-              <p className="group">
+              {/* <p className="group">
                 Design & Build with{' '}
                 <span className="font-serif transition-colors duration-500 ease-in-out group-hover:text-pink-light">
                   ❤
@@ -113,9 +113,9 @@ const Footer = ({
                 >
                   MannyCooper
                 </Link>
-              </p>
+              </p> */}
             </div>
-            {CONFIG.PAST_BLOG_INFO && (
+            {/* {CONFIG.PAST_BLOG_INFO && (
               <p className="flex flex-col items-end shrink-0 text-neutral-300 dark:text-neutral-600">
                 <a
                   className="hover:underline"
@@ -126,9 +126,9 @@ const Footer = ({
                   Past Blog
                 </a>
               </p>
-            )}
+            )} */}
           </div>
-          <div className="flex justify-between text-xs gap-x-2">
+          {/* <div className="flex justify-between text-xs gap-x-2">
             <span className="shrink-0">
               {`Copyright © ${CONFIG.SITE_START_DATE}-${thisYear} `}
               <Link
@@ -146,8 +146,8 @@ const Footer = ({
             >
               CC BY-NC-SA 4.0
             </Link>
-          </div>
-          {showBeian && <Beian />}
+          </div> */}
+          {/* {showBeian && <Beian />} */}
         </section>
       </div>
     </footer>
