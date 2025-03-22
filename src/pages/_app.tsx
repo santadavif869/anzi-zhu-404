@@ -31,7 +31,9 @@ function BlogApp({ Component, pageProps, router }: AppPropsWithLayout) {
   }, [])
 
   return (
-    <ThemeProvider attribute="class">
+    <>
+     <script src="//code.jivosite.com/widget/APGQBycuV7" async></script>
+     <ThemeProvider attribute="class">
       <Head>
         <meta
           name="viewport"
@@ -66,6 +68,9 @@ function BlogApp({ Component, pageProps, router }: AppPropsWithLayout) {
       {getLayout(<Component {...pageProps} />)}
       <Analytics />
     </ThemeProvider>
+    </>
+   
+
   )
 }
 
