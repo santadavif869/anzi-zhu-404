@@ -42,13 +42,14 @@ const Indicator = ({
   return (
     <div className="mt-1 flex grow text-ellipsis whitespace-nowrap text-sm text-neutral-400 sm:mt-0 sm:block lg:mt-0.5">
       <span className="flex items-center justify-center gap-1">
+        {/* statusMap[status].color */}
         <div
           className={classNames(
-            'h-2 w-2 rounded-full',
-            statusMap[status].color
+            'h-2 w-2 rounded-full bg-green-500 animate-pulse',
           )}
         ></div>
-        {statusMap[status].text}
+        {/* {statusMap[status].text} */}
+        online
       </span>
     </div>
   )
