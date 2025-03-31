@@ -18,15 +18,15 @@ export const StatsWidget = ({ data }: { data: BlogStats }) => {
         <div className="flex h-[72%] w-full flex-row items-start overflow-hidden px-3.5 pt-3.5 md:h-3/5 md:flex-row md:items-center md:justify-center md:space-x-3 md:px-3 md:py-2.5 lg:space-x-4 lg:px-5 lg:py-4">
         
            <div className='flex'>
-           <span className="md:text-3xl md:font-medium lg:text-3xl mr-3 text-red-600">PRO</span>
-           <span className="md:text-3xl md:font-medium  font-bold">高级会员计划已推出</span>
+           <span className="md:text-3xl md:font-medium lg:text-3xl mr-3 text-red-600">PRO+</span>
+           <span className="md:text-3xl md:font-medium  font-bold">会员计划已推出</span>
            </div>
          
         </div>
         <div
           className={classNames(
             'h-[28%] w-full md:h-2/5',
-            'md:bg-neutral-100 md:dark:bg-neutral-800'
+            'md:bg-neutral-100 md:dark:bg-neutral-900'
           )}
         >
           <div className="scrollbar-hide flex h-full w-full flex-row items-center justify-between gap-x-1.5 overflow-scroll px-3.5 pt-1 pb-3 font-medium md:justify-start md:gap-x-1 md:px-3 md:py-2 lg:gap-x-3 lg:px-5 lg:py-3 lg:text-sm">
