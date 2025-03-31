@@ -49,7 +49,7 @@ const Indicator = ({
           )}
         ></div>
         {/* {statusMap[status].text} */}
-        online
+        更新中
       </span>
     </div>
   )
