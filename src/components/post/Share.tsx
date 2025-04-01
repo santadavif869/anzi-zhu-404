@@ -80,7 +80,7 @@ export const Share = () => {
           }}
         />
       </div>
-      <div className="relative flex items-center mt-4 space-x-5 text-neutral-400">
+      {/* <div className="relative flex items-center mt-4 space-x-5 text-neutral-400">
         {shares &&
           shares.map((share) => (
             <button
@@ -99,7 +99,7 @@ export const Share = () => {
         >
           Copied
         </p>
-      </div>
+      </div> */}
     </>
   )
 }
