@@ -76,7 +76,7 @@ export const getStaticProps = withNavFooterStaticProps(
           nextPost,
         },
       },
-      // revalidate: CONFIG.NEXT_REVALIDATE_SECONDS,
+      revalidate: CONFIG.NEXT_REVALIDATE_SECONDS,
     }
   }
 )
@@ -101,7 +101,7 @@ const PostPage: NextPage<{
       <ContentLayout>
         <PostMessage post={post} />
         <BlockRender blocks={blocks} />
-        <PostFooter post={post} />
+        {/* <PostFooter post={post} /> */}
         <PostNavigation navigation={navigation} />
         {enableComment && <CommentSection />}
       </ContentLayout>
