@@ -64,7 +64,7 @@ export const getStaticProps = withNavFooterStaticProps(
         post: post || null,
         blocks: formattedBlocks,
       },
-      // revalidate: CONFIG.NEXT_REVALIDATE_SECONDS,
+      revalidate: CONFIG.NEXT_REVALIDATE_SECONDS,
     }
   }
 )
@@ -85,7 +85,7 @@ const PostPage: NextPage<{
       <ContentLayout>
         <PostMessage post={post} />
         <BlockRender blocks={blocks} />
-        <PostFooter post={post} />
+        {/* <PostFooter post={post} /> */}
         {enableDraftDialog && <DraftDialog />}
       </ContentLayout>
     </>
