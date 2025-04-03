@@ -18,7 +18,7 @@ const VisitButton = ({
     <Link
       className={classNames(
         'select-none rounded-full px-[1.125rem] py-1 text-center text-sm text-white',
-        disabled
+        false
           ? `${colorMap['gray_background']} pointer-events-none`
           : colorMap['blue_background']
       )}
@@ -80,7 +80,8 @@ const FriendStatus = ({ link, name }: { link: string; name: string }) => {
       <div className="items-start overflow-hidden grow sm:mb-4">
         <div className="flex flex-col sm:items-center">{children}</div>
       </div>
-      <VisitButton link={link} disabled={disabledButton} />
+      {/* <VisitButton link={link} disabled={disabledButton} /> */}
+      <VisitButton link={link} disabled={false} />
     </>
   )
 
