@@ -37,10 +37,10 @@ const Freinds: NextPage<{
           <BlockRender blocks={blocks} />
         </div>
         <FriendsCollection friends={friendsDatabase.data} />
-        <p className="mt-12 -mb-4 text-center text-neutral-400">
+        {/* <p className="mt-12 -mb-4 text-center text-neutral-400">
           👇扣1立即交友(不是)👇
         </p>
-        <CommentSection />
+        <CommentSection /> */}
       </ContainerLayout>
     </>
   )
@@ -72,7 +72,7 @@ export const getStaticProps: GetStaticProps = withNavFooterStaticProps(
         blocks: formattedBlocks,
         friendsDatabase: friendsDatabase,
       },
-      // revalidate: CONFIG.NEXT_REVALIDATE_SECONDS,
+      revalidate: CONFIG.NEXT_REVALIDATE_SECONDS,
     }
   }
 )
