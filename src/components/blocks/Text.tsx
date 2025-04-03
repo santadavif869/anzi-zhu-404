@@ -137,7 +137,7 @@ export const Text = ({
             {plainText}
           </a>
         ) : (
-          <span className="relative z-10">{plainText}</span>
+          <span className="relative z-10"></span>
         )}
       </span>
     )
