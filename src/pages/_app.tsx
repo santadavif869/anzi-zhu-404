@@ -39,7 +39,7 @@ function BlogApp({ Component, pageProps, router }: AppPropsWithLayout) {
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <title>1HO资源联盟</title>
+        <title>壹号资源联盟|全网精选合集已超100TB</title>
         <meta name="description" content="全网精选合集已超100TB" />
         <link
           rel="apple-touch-icon"
