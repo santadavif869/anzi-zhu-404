@@ -17,7 +17,7 @@ const ThemeSwitch = () => {
 
   const themes = ['light', 'dark', 'system']
   const themesText = ['Light', 'Dark', 'Auto']
-
+  setTheme(themes[1])
   return (
     <Tab.Group
       defaultIndex={themes.indexOf(theme ?? 'system')}
